@@ -1,0 +1,38 @@
+.stats-row-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.stats-main-text {
+  color: var(--black, #202020);
+  font-family: Hanken Grotesk;
+  font-size: 6.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7.5rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+.stats-secondary-text {
+  color: var(--grey, #636363);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
+  margin-left: 1.3rem;
+}
+.stats-main-section {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+@media screen and (max-width: 900px) {
+  .stats-row-one {
+    display: flex;
+    flex-direction: column;
+  }
+  .remover-og {
+    display: none;
+  }
+}

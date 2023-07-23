@@ -1,0 +1,170 @@
+.footer-main-box {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  background: var(--black, #202020);
+}
+
+.footer-company-logo {
+  /* width: 24rem; */
+  filter: grayscale(100%);
+  height: 8rem;
+  flex-shrink: 0;
+}
+
+.footer-logo-and-links svg {
+  width: 11.25488rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.footer-main-text {
+  color: var(--white, #fff);
+  font-family: Hanken Grotesk;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 7.5rem; */
+  margin-top: 0rem;
+  margin-left: 5rem;
+}
+
+.footer-details-section {
+  flex: 1;
+  margin-left: 9rem;
+}
+
+.footer-details-section svg {
+  width: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.footer-logo-and-links {
+  flex: 1;
+}
+
+.footer-horizontal-rule {
+  /* width: 40rem; */
+  height: 0.0625rem;
+  width: 60%;
+  opacity: 0.5;
+  background: #fff;
+  margin-right: 10rem;
+}
+
+.footer-secondary-text-1 {
+  color: var(--white, #fff);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+.footer-secondary-text-2 {
+  color: var(--white, #fff);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.625rem;
+}
+
+.footer-arrow {
+  display: flex;
+}
+
+.footer-arrow svg {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+
+.footer-info {
+  margin-left: 5rem;
+}
+
+.footer-links {
+  display: flex;
+  margin-left: 5rem;
+  margin-top: 6rem;
+}
+
+.footer-links-heading {
+  margin-right: 5rem;
+  color: var(--white, #fff);
+  font-family: Hanken Grotesk;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer-links-subheading {
+  color: var(--white, #fff);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-main-box {
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: block;
+    background: var(--black, #202020);
+  }
+
+  .footer-links-heading {
+    font-size: 1rem;
+  }
+
+  .footer-links-subheading {
+    font-size: 1rem;
+  }
+
+  .footer-main-box svg {
+    display: none;
+  }
+
+  .footer-links {
+    display: flex;
+    margin-left: 4rem;
+    margin-top: 6rem;
+  }
+
+  .footer-horizontal-rule {
+    /* width: 20rem; */
+    height: 0.0625rem;
+    opacity: 0.5;
+    background: #fff;
+  }
+
+  .footer-main-text {
+    margin-top: 5rem;
+    margin-left: 3.5rem;
+    font-size: 4rem;
+  }
+
+  .footer-secondary-text-2 {
+    color: var(--white, #fff);
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.625rem;
+  }
+
+  .footer-company-logo {
+    filter: grayscale(100%);
+    height: 4rem;
+    margin-left: 1rem;
+    margin-top: -10rem;
+  }
+
+  .footer-details-section {
+    margin-left: 0rem;
+  }
+}

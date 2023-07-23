@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather&family=Montserrat&family=Sacramento&family=Titillium+Web:wght@700&display=swap");
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d9d9d9;
+  padding: 10px;
+}
+
+.navbar-logo img {
+  filter: grayscale(100%);
+  height: 50px;
+}
+
+.navbar-headings {
+  margin-right: 5vh;
+  display: flex;
+}
+
+.navbar-headings p {
+  font-family: Inter;
+  font-size: 18px;
+  flex-shrink: 0;
+  margin: 0 10px;
+}
+
+.navbar-headings a {
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .slash {
+    display: none;
+  }
+  .navbar-headings {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  .menu-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .menu-icon.open span:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.open span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar-headings.visible {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 100;
+    padding: 2rem;
+  }
+}

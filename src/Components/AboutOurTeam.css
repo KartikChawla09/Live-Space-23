@@ -1,0 +1,49 @@
+.About-team-box {
+    margin-bottom: 5rem;
+}
+
+.about-team-head {
+    color: var(--black, #202020);
+    text-align: right;
+    margin-right: 2rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+    /* H2 - Header 2 - 110pt Hanken Grotesk Medium */
+    font-family: Hanken Grotesk;
+    font-size: 6.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 7.5rem;
+    /* 109.091% */
+}
+
+.about-team-text {
+    width: 70%;
+    margin: .5rem auto;
+    background: #D9D9D9;
+    border-radius: 20px;
+    padding: 1rem;
+    padding-left: 2rem;
+
+    color: var(--black, #202020);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+    /* 162.5% */
+}
+
+@media screen and (max-width: 840px) {
+    .about-team-head {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .about-team-head {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}

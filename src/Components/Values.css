@@ -1,0 +1,91 @@
+.value-box {
+  background: var(--beige, #e8e3df);
+  padding-bottom: 10vh;
+}
+.value-box-text-image {
+  display: flex;
+  justify-content: flex-end;
+}
+.value-svgs {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.value-image-box {
+  width: 84.0625rem;
+  height: 43.125rem;
+  flex-shrink: 0;
+  background: #d9d9d9;
+  flex: 3;
+}
+.value-text-image-arrow {
+  margin-left: 3rem;
+  flex: 1;
+}
+.value-text {
+  color: var(--black, #202020);
+  font-family: Hanken Grotesk;
+  font-size: 6.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7.5rem;
+}
+.value-holder {
+  color: var(--black, #202020);
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.625rem; /* 131.25% */
+  width: 14rem;
+}
+.down-svg {
+  position: relative;
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 900px) {
+  .value-text-image-arrow svg {
+    display: none;
+  }
+  .value-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-right: 1rem;
+  }
+
+  .value-holder svg {
+    margin-right: 2rem;
+    width: 2.5rem;
+  }
+
+  .value-image-box {
+    display: none;
+  }
+  .down-svg {
+    margin-top: 0;
+  }
+  .value-svgs {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .value-text {
+    color: var(--black, #202020);
+    font-family: Hanken Grotesk;
+    font-size: 3.5rem;
+    font-style: normal;
+    margin-right: 2rem;
+    font-weight: 500;
+    line-height: 7.5rem;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  .value-holder p {
+    font-size: 1.5rem;
+  }
+}

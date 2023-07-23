@@ -1,0 +1,60 @@
+.our-services-section {
+  margin-bottom: 10rem;
+}
+.horizontal-ruler-2 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  width: 95%;
+  height: 0.0625rem;
+  background: #636363;
+}
+.services-text {
+  margin-top: 10rem;
+  color: var(--black, #202020);
+  text-align: center;
+  font-family: Inter;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 5rem;
+  margin-bottom: 15rem;
+}
+.service-type {
+  margin-left: 5rem;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+  color: var(--grey, #636363);
+  font-family: Hanken Grotesk;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+}
+@media screen and (max-width: 900px) {
+  .service-type {
+    text-align: center;
+    margin-left: 0;
+  }
+  .horizontal-ruler-2 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    width: 90%;
+    height: 0.0625rem;
+    background: #636363;
+  }
+  .services-text {
+    margin-top: 10rem;
+    color: var(--black, #202020);
+    text-align: center;
+    font-family: Inter;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 5rem;
+    margin-bottom: 10rem;
+    margin-left: 0.5rem;
+  }
+}
