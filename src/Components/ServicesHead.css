@@ -1,0 +1,217 @@
+.services-main-box {
+    margin-bottom: 5rem;
+}
+
+.services-box-elements {
+    display: flex;
+
+}
+
+.service-image-placeholder {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.service-image1 {
+    width: 30.875rem;
+    border: 1px solid black;
+    height: 33.1875rem;
+    background: #D9D9D9;
+    border-radius: 20px;
+}
+
+.service-image2 {
+    width: 13.8125rem;
+    height: 15.0625rem;
+    border: 1px solid black;
+    background: #D9D9D9;
+    border-radius: 20px;
+    margin-top: -5rem;
+    margin-left: 22rem;
+}
+
+.service-text-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1 auto;
+    margin-top: 6rem;
+    padding-left: 2rem;
+}
+
+.service-text-line1 {
+    color: var(--black, #202020);
+    margin-bottom: 2rem;
+    /* H1 - Header 1 - 120pt Hanken Grotesk Medium */
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 9rem;
+    font-family: Hanken Grotesk;
+    font-size: 6.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.125rem;
+    /* 108.333% */
+}
+
+.service-text-line2 {
+    color: var(--black, #202020);
+    padding-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* H1 - Header 1 - 120pt Hanken Grotesk Medium */
+    font-family: Hanken Grotesk;
+    font-size: 6.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.125rem;
+    /* 108.333% */
+}
+
+.service-text-line3 {
+    color: var(--black, #202020);
+    margin-top: 2rem;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 19rem;
+    padding-bottom: 3rem;
+
+    /* H1 - Header 1 - 120pt Hanken Grotesk Medium */
+    font-family: Hanken Grotesk;
+    font-size: 6.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.125rem;
+    /* 108.333% */
+}
+
+.service-bottom-text {
+    text-align: right;
+    margin-right: 2rem;
+    margin-top: -3rem;
+    color: var(--grey, #636363);
+
+    /* Paragraph - 16pt Inter Regular */
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+    /* 162.5% */
+}
+
+@media screen and (max-width: 1195px) {
+    .service-text-box {
+        margin-left: 0;
+    }
+
+    .service-text-line1 {
+        font-size: 5.5rem;
+        padding-left: 2rem;
+    }
+
+    .service-text-line2 {
+        padding-left: 4.5rem;
+        margin-left: 0rem;
+        font-size: 5.5rem;
+    }
+
+    .service-text-line3 {
+        font-size: 5.5rem;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+
+    .services-box-elements {
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .service-text-box {
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .service-image-placeholder {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service-bottom-text {
+        margin-top: 3rem;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .service-text-line1 {
+        font-size: 6rem;
+    }
+
+    .service-text-line2 {
+        font-size: 6rem;
+    }
+
+    .service-text-line3 {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .service-text-box {
+        width: 90%;
+        margin: 3rem auto;
+        margin-bottom: 2rem;
+    }
+
+    .service-text-line1 {
+        font-size: 3.5rem;
+        padding-left: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .service-text-line2 {
+        padding-left: 1.5rem;
+        line-height: 1.2rem;
+        margin-left: 0rem;
+        font-size: 3.5rem;
+    }
+
+    .service-text-line3 {
+        font-size: 3.5rem;
+        line-height: 1.2rem;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .service-image-placeholder {
+        margin-top: 1rem;
+        width: 18rem;
+    }
+
+    .service-image1 {
+        width: 100%;
+    }
+
+    .service-image2 {
+        display: none;
+    }
+
+    .service-bottom-text {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
