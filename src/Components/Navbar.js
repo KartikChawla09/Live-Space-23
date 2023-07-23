@@ -16,19 +16,19 @@ const Navbar = () => {
         <img src={CompanyLogo} alt="logo" />
       </div>
       <div className={`navbar-headings ${menuOpen ? "visible" : ""}`}>
-        <p onClick={handleParagraphClick}>
+        <p className="navbar-tem" onClick={handleParagraphClick}>
           <Link to="/">Home</Link>
         </p>
         <p className="slash">/</p>
-        <p onClick={handleParagraphClick}>
-          <Link to="/about">AboutUs</Link>
+        <p className="navbar-tem" onClick={handleParagraphClick}>
+          <Link to="/about">About Us</Link>
         </p>
         <p className="slash">/</p>
-        <p onClick={handleParagraphClick}>
+        <p className="navbar-tem" onClick={handleParagraphClick}>
           <Link to="/services">Services</Link>
         </p>
         <p className="slash">/</p>
-        <p onClick={handleParagraphClick}>
+        <p className="navbar-tem" onClick={handleParagraphClick}>
           <Link to="/contact">Contact Us</Link>
         </p>
       </div>

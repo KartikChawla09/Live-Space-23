@@ -50,7 +50,6 @@ const Clients = () => {
         <p className="client-main-text">What Our Clients Say</p>
       </div>
       <p className="toes">Testimonials on our exceptional service</p>
-
       <div className="horizontal-ruler"></div>
       <div className="customer-review-carousel">
         <div className="client-text-box">
