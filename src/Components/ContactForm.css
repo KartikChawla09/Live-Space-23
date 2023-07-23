@@ -219,6 +219,9 @@
   }
   .contact-form {
     flex-direction: column-reverse;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 4rem;
   }
 
   .contact-form > * {
