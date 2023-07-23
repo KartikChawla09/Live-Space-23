@@ -14,7 +14,7 @@ const Services = () => {
             <ServicesHead></ServicesHead>
             <ServicesProcess></ServicesProcess>
             <AboutServices></AboutServices>
-            {/* <NewsLetter></NewsLetter> */}
+            <NewsLetter></NewsLetter>
             <Footer></Footer>
         </div>
     )
