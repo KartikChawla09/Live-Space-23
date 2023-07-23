@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import CompanyLogo from "../assets/company.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,19 +17,19 @@ const Navbar = () => {
       </div>
       <div className={`navbar-headings ${menuOpen ? "visible" : ""}`}>
         <p onClick={handleParagraphClick}>
-          <a href="#home">Home</a>
+          <Link to="/">Home</Link>
         </p>
         <p className="slash">/</p>
         <p onClick={handleParagraphClick}>
-          <a href="#services">AboutUs</a>
+          <Link to="/about">AboutUs</Link>
         </p>
         <p className="slash">/</p>
         <p onClick={handleParagraphClick}>
-          <a href="#projects">Services</a>
+          <Link to="/services">Services</Link>
         </p>
         <p className="slash">/</p>
         <p onClick={handleParagraphClick}>
-          <a href="#contact">Contact Us</a>
+          <Link to="/contact">Contact Us</Link>
         </p>
       </div>
       <div
