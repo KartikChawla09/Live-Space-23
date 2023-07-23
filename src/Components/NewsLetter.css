@@ -87,14 +87,29 @@
 @media screen and (max-width: 860px) {
   .news-content-box {
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
     height: 30rem;
+    background: #D9D9D9;
+  }
+
+  .news-text-box {
+    width: 100%;
+  }
+
+  .news-line1 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .text-subhead {
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
 
   .image-place-holder {
-    margin-top: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    height: 40%;
+    display: none;
   }
 
   .insta-handle {
@@ -103,8 +118,8 @@
 
   .news-heading {
     font-size: 3rem;
-    margin-bottom: 5rem;
     line-height: 3rem;
-
+    padding-bottom: 3rem;
+    margin-top: 0;
   }
 }
