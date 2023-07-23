@@ -7,11 +7,14 @@
   --green: #white;
   --border: 1px solid #e6e6e6;
 }
+.contact-box-main {
+  margin-bottom: 5rem;
+}
 .contact-map {
   display: flex;
 }
 .contact-us-contact-info {
-  color: white;
+  color: black;
   font-family: Hanken Grotesk;
   font-size: 3rem;
   margin-top: -2rem;
@@ -90,7 +93,13 @@
   border: var(--border);
   padding: 0 20px;
 }
-
+iframe {
+  width: 50%;
+}
+.info-container {
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
 .second-container form .form-group label {
   display: flex;
   align-items: center;
@@ -172,6 +181,18 @@
 }
 
 @media screen and (max-width: 800px) {
+  .contact-map {
+    display: flex;
+    flex-direction: column;
+  }
+  iframe {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .info-container {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
   .second-container form button {
     width: 20rem;
     height: 50px;
