@@ -7,9 +7,9 @@ import Services from "./pages/Services";
 function App() {
   return (
     <div>
-      {/* <ContactUs></ContactUs> */}
-      {/* <Home></Home> */}
-      {/* <About /> */}
+      <ContactUs></ContactUs>
+      <Home></Home>
+      <About />
       <Services></Services>
     </div>
   );
