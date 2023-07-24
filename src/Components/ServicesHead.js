@@ -3,6 +3,8 @@ import "./ServicesHead.css"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { duration } from '@mui/material'
+import img2 from "../assets/service2.png"
+import img1 from "../assets/service1.png"
 
 const ServicesHead = () => {
     useEffect(() => {
@@ -12,8 +14,12 @@ const ServicesHead = () => {
         <div className='services-main-box'>
             <div className='services-box-elements' data-aos="zoom-in">
                 <div className='service-image-placeholder'>
-                    <div className='service-image1'></div>
-                    <div className='service-image2'></div>
+                    <div className='service-image1 kenburns-top'>
+                        <img src={img2} alt="image"></img>
+                    </div>
+                    <div className='service-image2 kenburns-top'>
+                        <img src={img1} alt="image-small"></img>
+                    </div>
                 </div>
                 <div className='service-text-box'>
                     <h1 className='service-text-line1'>Transform</h1>
