@@ -41,7 +41,7 @@ const Clients = () => {
   }, []);
 
   return (
-    <div className="client-main-page">
+    <div className="client-main-page" id="testimonials">
       <div className="horizontal-ruler"></div>
       <div className="client-main-text-arrow">
         <svg
