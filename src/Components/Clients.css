@@ -47,6 +47,13 @@
   flex-shrink: 0;
 }
 
+.client-text-box-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .client-text-heading {
   color: var(--black, #202020);
   font-family: Inter;

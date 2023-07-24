@@ -4,6 +4,7 @@ import CompanyLogo from "../assets/company.png";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { duration } from '@mui/material'
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -21,10 +22,9 @@ const Footer = () => {
         <div className="footer-links">
           <div>
             <p className="footer-links-heading">Quick Links</p>
-            <p className="footer-links-subheading">About Us</p>
-            <p className="footer-links-subheading">Services</p>
+            <Link className='link' to="/about"><p className="footer-links-subheading">About Us</p></Link>
+            <Link className='link' to="/services"><p className="footer-links-subheading">Services</p></Link>
             {/* <p className="footer-links-subheading">Portfolio</p> */}
-            <p className="footer-links-subheading">Testimonials</p>
             {/* <p className="footer-links-subheading">Blog</p> */}
             {/* <p className="footer-links-subheading">Contact Us</p> */}
             {/* <p className="footer-links-subheading">FAQ</p> */}
@@ -55,15 +55,15 @@ const Footer = () => {
         </div>
         <div className="footer-info">
           <p className="footer-secondary-text-1">Email</p>
-          <p className="footer-secondary-text-2">support@dreamwell.com</p>
+          <p className="footer-secondary-text-2">livespacereno@gmail.com</p>
           <div className="footer-horizontal-rule"></div>
           <p className="footer-secondary-text-1">Phone</p>
-          <p className="footer-secondary-text-2">123-456-7890</p>
+          <p className="footer-secondary-text-2">+1 778-384-1100</p>
           <div className="footer-horizontal-rule"></div>
           <p className="footer-secondary-text-1">Address</p>
           <p className="footer-secondary-text-2">
             {" "}
-            123 Anywhere St., Any City,<br></br> 12345 Any State
+            Lower MainLand British Columbia
           </p>
           <div className="footer-horizontal-rule"></div>
         </div>

@@ -27,12 +27,18 @@
 
   .project-button {
     width: 11.0625rem;
+    color: var(--black, #202020);
     height: 3.125rem;
     flex-shrink: 0;
     margin-bottom: 4rem;
     border-radius: 1.5rem;
     border: 1px solid var(--black, #202020);
     background: rgba(255, 255, 255, 0);
+  }
+
+  .btn-link {
+    text-decoration: none;
+    color: var(--black, #202020);
   }
 
   .social-media {

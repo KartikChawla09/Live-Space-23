@@ -7,11 +7,13 @@ import WhyChooseUs from '../Components/WhyChooseUs'
 import AboutOurTeam from '../Components/AboutOurTeam'
 import NewsLetter from '../Components/NewsLetter'
 import Footer from '../Components/Footer'
+import GoToTop from './goToTop'
 
 
 const About = () => {
     return (
         <div>
+            <GoToTop></GoToTop>
             <Navbar></Navbar>
             <AboutHeading></AboutHeading>
             <AboutOurTeam></AboutOurTeam>

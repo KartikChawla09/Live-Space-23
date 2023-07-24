@@ -38,6 +38,7 @@
   .slash {
     display: none;
   }
+
   .navbar-headings {
     display: none;
   }
@@ -60,9 +61,11 @@
     background-color: #333;
     transition: background-color 0.3s ease-in-out;
   }
+
   .navbar-tem {
     padding-top: 5rem;
   }
+
   .menu-icon.open span:first-child {
     transform: translateY(8px) rotate(45deg);
   }
@@ -74,6 +77,7 @@
   .menu-icon.open span:last-child {
     transform: translateY(-8px) rotate(-45deg);
   }
+
   .navbar-headings.visible {
     display: flex;
     justify-content: center;
