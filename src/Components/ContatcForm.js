@@ -44,6 +44,7 @@ const ContatcForm = () => {
             <button>Submit</button>
           </form>
         </div>
+        <div>/*Image*/</div>
       </div>
       <div className="contact-map">
         <iframe
