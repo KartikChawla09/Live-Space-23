@@ -4,6 +4,7 @@ const ContatcForm = () => {
   return (
     <div className="contact-box-main">
       <div className="contact-form">
+        <div className="photo-for-contact"></div>
         <div className="second-container">
           <h2>Send Us A Message</h2>
           <form>
@@ -38,13 +39,14 @@ const ContatcForm = () => {
               <label htmlFor="message-textarea">Message</label>
               <textarea
                 id="message-textarea"
-              // placeholder="Write us a message"
+                // placeholder="Write us a message"
               ></textarea>
             </div>
-            <button>Submit</button>
+            <div className="submit-box-contact">
+              <button>Submit</button>
+            </div>
           </form>
         </div>
-        <div>/*Image*/</div>
       </div>
       <div className="contact-map">
         <iframe

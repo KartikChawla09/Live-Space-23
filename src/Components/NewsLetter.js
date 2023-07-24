@@ -26,16 +26,21 @@ const NewsLetter = () => {
           <h5 className="text-subhead">
             We'll deliver our best content straight to your inbox.
           </h5>
-          <div className="insta-handle">
-            <p className="insta-page">
-              <a
-                href="https://www.instagram.com/livespace.ca/"
-                className="insta-id"
-              >
-                Talk to us
-              </a>
-            </p>
-          </div>
+          <a
+            className="insta-box-nl"
+            href="https://www.instagram.com/livespace.ca/"
+          >
+            <div className="insta-handle">
+              <p className="insta-page">
+                <a
+                  href="https://www.instagram.com/livespace.ca/"
+                  className="insta-id"
+                >
+                  Talk to us
+                </a>
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </div>

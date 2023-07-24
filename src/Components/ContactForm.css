@@ -7,6 +7,12 @@
   --green: #white;
   --border: 1px solid #e6e6e6;
 }
+.photo-for-contact {
+  background-color: black;
+  height: 50rem;
+  margin-left: -3rem;
+  margin-top: 3rem;
+}
 .contact-box-main {
   margin-bottom: 5rem;
 }
@@ -181,6 +187,14 @@ iframe {
 }
 
 @media screen and (max-width: 800px) {
+  .photo-for-contact {
+    background-color: black;
+    height: 30rem;
+    width: 80%;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
   .contact-map {
     display: flex;
     flex-direction: column;
@@ -209,6 +223,8 @@ iframe {
   }
   .contact-form {
     width: 80vw;
+    display: flex;
+    flex-direction: column;
   }
   .first-container .info-container div {
     margin: 24px 0;
@@ -225,6 +241,9 @@ iframe {
 }
 
 @media screen and (max-width: 700px) {
+  .submit-box-contact {
+    margin-right: 5rem;
+  }
   .second-container form button {
     width: 15rem;
     height: 50px;
@@ -240,7 +259,6 @@ iframe {
     margin-right: 5rem;
   }
   .contact-form {
-    flex-direction: column-reverse;
     width: 100%;
     padding-left: 0;
     padding-right: 4rem;
