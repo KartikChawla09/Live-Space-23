@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from 'react'
 import "./Footer.css";
 import CompanyLogo from "../assets/company.png";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { duration } from '@mui/material'
+
+
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  }, []);
   return (
-    <div className="footer-main-box">
+    <div className="footer-main-box" /* data-aos="fade-in" */>
       <div className="footer-logo-and-links">
         <img
           className="footer-company-logo"

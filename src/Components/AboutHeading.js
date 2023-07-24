@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./AboutHeading.css"
+import 'animate.css';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { duration } from '@mui/material'
 
 const AboutHeading = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, []);
     return (
-        <div className='about-outer-box'>
+        <div className='about-outer-box' data-aos="zoom-in">
             <div className='About-header-content'>
                 <p className='About-text'>Our Story</p>
                 <div className='About-header-text'>

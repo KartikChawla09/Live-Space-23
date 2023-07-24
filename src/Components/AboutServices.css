@@ -82,6 +82,7 @@
 @media screen and (max-width: 950px) {
     .about-services-box {
         margin-bottom: 1rem;
+        overflow-x: hidden;
     }
 
     .About-services-image {
@@ -90,6 +91,7 @@
 
     .About-services {
         margin-top: 5rem;
+        overflow-x: hidden;
     }
 
     .About-services-heading {
