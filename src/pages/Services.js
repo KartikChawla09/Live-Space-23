@@ -6,10 +6,12 @@ import ServicesProcess from '../Components/ServicesProcess'
 import AboutServices from '../Components/AboutServices'
 import NewsLetter from '../Components/NewsLetter'
 import Footer from '../Components/Footer'
+import GoToTop from './goToTop'
 
 const Services = () => {
     return (
         <div>
+            <GoToTop></GoToTop>
             <Navbar></Navbar>
             <ServicesHead></ServicesHead>
             <ServicesProcess></ServicesProcess>

@@ -5,9 +5,15 @@
   margin-top: -2rem;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 20px;
   height: 25rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: ease-in-out transform .5s;
+}
+
+.news-content-box:hover {
+  transform: scale(1.02);
 }
 
 .news-heading {
@@ -24,7 +30,14 @@
 
 .image-place-holder {
   width: 50%;
-  background: #D9D9D9;
+
+  border-radius: 20px;
+}
+
+.image-place-holder img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
 }
 
@@ -69,6 +82,11 @@
   border-radius: 2.3125rem;
   border: 1px solid var(--grey, #636363);
   background: rgba(255, 255, 255, 0.00);
+}
+
+.insta-handle:hover {
+  color: rgba(255, 255, 255, 0.00);
+  background: #D9D9D9;
 }
 
 .insta-page {

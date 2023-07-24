@@ -3,6 +3,7 @@ import "./NewsLetter.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { duration } from "@mui/material";
+import image from "../assets/newsletter1.png";
 
 const NewsLetter = () => {
   useEffect(() => {
@@ -14,7 +15,9 @@ const NewsLetter = () => {
         Know About Us
       </h2>
       <div className="news-content-box">
-        <div className="image-place-holder" data-aos="fade-right"></div>
+        <div className="image-place-holder" data-aos="fade-right">
+          <img src={image} alt="connect with us"></img>
+        </div>
         <div className="news-text-box" data-aos="fade-left">
           <p className="news-line1">
             Follow our Instagram handle to stay in the know about our latest

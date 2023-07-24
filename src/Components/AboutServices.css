@@ -35,6 +35,11 @@
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    transition: ease-in-out transform .5s;
+}
+
+.About-services-box-content:hover {
+    transform: scale(1.02);
 }
 
 .About-services-image {
@@ -45,6 +50,13 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 15px;
+}
+
+.About-services-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .About-services-title {

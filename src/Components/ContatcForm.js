@@ -38,7 +38,7 @@ const ContatcForm = () => {
               <label htmlFor="message-textarea">Message</label>
               <textarea
                 id="message-textarea"
-                // placeholder="Write us a message"
+              // placeholder="Write us a message"
               ></textarea>
             </div>
             <button>Submit</button>
@@ -53,7 +53,7 @@ const ContatcForm = () => {
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Vancouver+(Lower Mainland)&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Vancouver+(Lower Mainland)&amp;t=k&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
         <div className="info-container">
           <div>

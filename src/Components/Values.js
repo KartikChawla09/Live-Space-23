@@ -3,6 +3,7 @@ import "./Values.css";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { duration } from '@mui/material'
+import valueImage from "../assets/value.jpg"
 
 const Values = () => {
   useEffect(() => {
@@ -27,7 +28,9 @@ const Values = () => {
             />
           </svg>
         </div>
-        <div className="value-image-box"></div>
+        <div className="value-image-box">
+          <img src={valueImage} alt="value"></img>
+        </div>
       </div>
       <div className="value-svgs">
         <div className="value-holder" data-aos="zoom-in">

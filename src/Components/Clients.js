@@ -4,25 +4,29 @@ import "./Clients.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { duration } from "@mui/material";
+import client1 from "../assets/client1.jpg"
+import client2 from "../assets/client2.jpg"
+import client3 from "../assets/client3.jpg"
+
 
 const reviews = [
   {
     id: 1,
     text: "I hired LiveSpace to design and build my dream home, and I could not be happier with the result. From the initial consultation to the final walk-through, the LiveSpace team was professional, attentive, and a pleasure to work with. They took the time to listen to my needs and preferences, and they brought their expertise to the table to create a home that is not only beautiful but also functional and sustainable. I was especially impressed by their attention to detail and their ability to incorporate unique design elements that truly make my home one of a kind. I highly recommend Archies for anyone who is looking for a top-notch architecture and design firm.",
     name: "Dereck Lawson",
-    image: "client1.jpg",
+    image: client1,
   },
   {
     id: 2,
     text: "I hired LiveSpace to handle the plumbing and electrical work in my home renovation, and I must say they exceeded all my expectations. From the outset, the team displayed a high level of professionalism and expertise in their field. They carefully assessed the existing systems and proposed efficient and cost-effective solutions to address my needs. Not only did they complete the project on time, but they also maintained excellent communication and kept me informed at every step. Their friendly and approachable attitude made the entire experience smooth and stress-free.",
     name: "Mark Lewis",
-    image: "client2.jpg",
+    image: client2,
   },
   {
     id: 3,
     text: "When it came to enhancing the security of my property, I turned to LiveSpace for their expertise in security and camera installation. They proved to be an exceptional choice from start to finish. Their knowledgeable team conducted a thorough assessment of my property's security needs and designed a tailored plan to address potential vulnerabilities. Throughout the installation process, LiveSpace exhibited a high level of professionalism and attention to detail. They meticulously installed state-of-the-art security cameras and systems, providing me with peace of mind and confidence in the safety of my home.",
     name: "Michael Thompson",
-    image: "client3.jpg",
+    image: client3,
   },
   // Add more reviews here
 ];
@@ -44,7 +48,7 @@ const Clients = () => {
   }, []);
 
   return (
-    <div className="client-main-page">
+    <div className="client-main-page" id="testimonials">
       <div className="horizontal-ruler"></div>
       <div className="client-main-text-arrow">
         <svg
@@ -71,7 +75,7 @@ const Clients = () => {
         <div className="client-text-box">
           <div className="client-text-box-photo" data-aos="zoom-in">
             <img
-              src={`../assets/${reviews[activeReview].image}`}
+              src={reviews[activeReview].image}
               width="100%"
               height="100%"
             />
