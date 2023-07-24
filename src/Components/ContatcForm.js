@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ContactForm.css";
+import image from "../assets/contact.jpg"
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { duration } from "@mui/material";
 const ContatcForm = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <div className="contact-box-main">
+    <div className="contact-box-main" data-aos="zoom-in">
       <div className="contact-form">
-        <div className="photo-for-contact"></div>
+        <div className="photo-for-contact">
+          <img className="kenburns-top" src={image} alt="ContactUs"></img>
+        </div>
         <div className="second-container">
           <h2>Send Us A Message</h2>
           <form>
             <div className="form-group">
-              <label htmlFor="name-input">Tell us your name*</label>
+              <label data-aos="zoom-in" htmlFor="name-input">Tell us your name*</label>
               <input
                 id="name-input"
                 type="text"
@@ -18,7 +27,7 @@ const ContatcForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email-input">Enter your email*</label>
+              <label data-aos="zoom-in" htmlFor="email-input">Enter your email*</label>
               <input
                 id="email-input"
                 type="text"
@@ -27,7 +36,7 @@ const ContatcForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="phone-input">Enter phone number*</label>
+              <label data-aos="zoom-in" htmlFor="phone-input">Enter phone number*</label>
               <input
                 id="phone-input"
                 type="text"
@@ -36,19 +45,19 @@ const ContatcForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="message-textarea">Message</label>
+              <label data-aos="zoom-in" htmlFor="message-textarea">Message</label>
               <textarea
                 id="message-textarea"
-                // placeholder="Write us a message"
+              // placeholder="Write us a message"
               ></textarea>
             </div>
             <div className="submit-box-contact">
-              <button>Submit</button>
+              <button data-aos="zoom-in">Submit</button>
             </div>
           </form>
         </div>
       </div>
-      <div className="contact-map">
+      <div className="contact-map" data-aos="zoom-in">
         <iframe
           width="100%"
           height="600"
@@ -59,17 +68,17 @@ const ContatcForm = () => {
         ></iframe>
         <div className="info-container">
           <div>
-            <h4 className="contact-us-contact-info">Contact Info</h4>
-            <h3>Address</h3>
-            <p>Lower Mainland, British Columbia</p>
+            <h4 className="contact-us-contact-info" data-aos="zoom-in">Contact Info</h4>
+            <h3 data-aos="zoom-in">Address</h3>
+            <p data-aos="zoom-in">Lower Mainland, British Columbia</p>
           </div>
           <div>
-            <h3>Lets Talk</h3>
-            <p>+1 778-384-1100</p>
+            <h3 data-aos="zoom-in">Lets Talk</h3>
+            <p data-aos="zoom-in"> +1 778-384-1100</p>
           </div>
           <div>
-            <h3>General Support</h3>
-            <p>livespacereno@gmail.com</p>
+            <h3 data-aos="zoom-in">General Support</h3>
+            <p data-aos="zoom-in">livespacereno@gmail.com</p>
           </div>
         </div>
       </div>

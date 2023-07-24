@@ -4,9 +4,9 @@ import "./Clients.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { duration } from "@mui/material";
-import client1 from "../assets/client1.jpg"
+import client3 from "../assets/client1.jpg"
 import client2 from "../assets/client2.jpg"
-import client3 from "../assets/client3.jpg"
+import client1 from "../assets/client3.jpg"
 
 
 const reviews = [

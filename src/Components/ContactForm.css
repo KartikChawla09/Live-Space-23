@@ -7,18 +7,30 @@
   --green: #white;
   --border: 1px solid #e6e6e6;
 }
+
 .photo-for-contact {
-  background-color: black;
-  height: 50rem;
-  margin-left: -3rem;
-  margin-top: 3rem;
+  height: 44rem;
+  margin-left: -.7rem;
+  margin-right: 0;
+  margin-top: 2rem;
+  border-radius: 20px;
 }
+
+.photo-for-contact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 .contact-box-main {
   margin-bottom: 5rem;
 }
+
 .contact-map {
   display: flex;
 }
+
 .contact-us-contact-info {
   color: black;
   font-family: Hanken Grotesk;
@@ -27,22 +39,24 @@
   font-style: normal;
   font-weight: 500;
 }
+
 .contact-form {
   display: flex;
   padding-left: 5rem;
   justify-content: space-between;
   background: var(--white);
   margin: 50px 0;
+  margin-top: 0;
+  padding: 5rem;
 }
 
-.contact-form > * {
+.contact-form>* {
   width: 50%;
 }
 
 .first-container {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("https://colorlib.com/etc/cf/ContactFrom_v17/images/bg-01.jpg") center
-      center / cover no-repeat;
+    url("https://colorlib.com/etc/cf/ContactFrom_v17/images/bg-01.jpg") center center / cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,6 +88,8 @@
 
 .second-container {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .second-container h2 {
@@ -88,6 +104,8 @@
 .second-container form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .second-container form .form-group {
@@ -99,13 +117,16 @@
   border: var(--border);
   padding: 0 20px;
 }
+
 iframe {
   width: 50%;
 }
+
 .info-container {
   margin-left: 3rem;
   margin-top: 3rem;
 }
+
 .second-container form .form-group label {
   display: flex;
   align-items: center;
@@ -124,6 +145,7 @@ iframe {
   outline: none;
   border-bottom: 1px solid #ccc;
 }
+
 .second-container form .form-group input {
   width: 90%;
   border: none;
@@ -132,6 +154,7 @@ iframe {
   margin-bottom: 3rem;
   margin-left: 1rem;
 }
+
 .second-container form .form-group textarea {
   width: 90%;
   margin-left: 1rem;
@@ -140,6 +163,7 @@ iframe {
   border-bottom: 1px solid #ccc;
   margin-bottom: 3rem;
 }
+
 .second-container form input {
   width: 100%;
   font-size: 15px;
@@ -148,6 +172,7 @@ iframe {
   outline: none;
   border-bottom: 1px solid #ccc;
 }
+
 .second-container form .form-group {
   width: 100%;
 }
@@ -186,7 +211,7 @@ iframe {
   background: #333;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1180px) {
   .photo-for-contact {
     background-color: black;
     height: 30rem;
@@ -195,18 +220,19 @@ iframe {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
+
   .contact-map {
     display: flex;
     flex-direction: column;
   }
+
   iframe {
     width: 100%;
     margin-bottom: 3rem;
   }
-  .info-container {
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
+
+
+
   .second-container form button {
     width: 20rem;
     height: 50px;
@@ -221,22 +247,43 @@ iframe {
     cursor: pointer;
     margin-right: 0rem;
   }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .contact-form {
     width: 80vw;
     display: flex;
     flex-direction: column;
   }
+
   .first-container .info-container div {
     margin: 24px 0;
     margin-right: 0rem;
   }
+
   .contact-form {
     display: flex;
-    padding-left: 0.3rem;
     justify-content: space-between;
+    padding: 0;
     background: var(--white);
-    margin: 50px 0;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -244,6 +291,7 @@ iframe {
   .submit-box-contact {
     margin-right: 5rem;
   }
+
   .second-container form button {
     width: 15rem;
     height: 50px;
@@ -258,27 +306,71 @@ iframe {
     cursor: pointer;
     margin-right: 5rem;
   }
+
   .contact-form {
     width: 100%;
-    padding-left: 0;
-    padding-right: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
-  .contact-form > * {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     width: 100%;
   }
+
 
   .first-container {
     padding: 40px 0;
   }
+
   .first-container .info-container div {
     margin: 24px 0;
     margin-right: 0rem;
   }
+
   .first-container {
     margin-left: 2rem;
   }
+
   .second-container {
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+
+  .info-container h4 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .second-container form {
+    width: 90%;
+  }
+
+  .second-container label {
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .second-container input {
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
