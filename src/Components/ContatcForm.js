@@ -52,21 +52,21 @@ const ContatcForm = () => {
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Canada+(Livespace)&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Vancouver+(Lower Mainland)&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
         <div className="info-container">
           <div>
             <h4 className="contact-us-contact-info">Contact Info</h4>
             <h3>Address</h3>
-            <p>Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US</p>
+            <p>Lower Mainland, British Columbia</p>
           </div>
           <div>
             <h3>Lets Talk</h3>
-            <p>+1 800 1236879</p>
+            <p>+1 778-384-1100</p>
           </div>
           <div>
             <h3>General Support</h3>
-            <p>contact@example.com</p>
+            <p>livespacereno@gmail.com</p>
           </div>
         </div>
       </div>

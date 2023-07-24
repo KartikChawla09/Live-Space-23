@@ -1,25 +1,28 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "./Clients.css";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-import { duration } from '@mui/material'
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { duration } from "@mui/material";
 
 const reviews = [
   {
     id: 1,
     text: "I hired LiveSpace to design and build my dream home, and I could not be happier with the result. From the initial consultation to the final walk-through, the LiveSpace team was professional, attentive, and a pleasure to work with. They took the time to listen to my needs and preferences, and they brought their expertise to the table to create a home that is not only beautiful but also functional and sustainable. I was especially impressed by their attention to detail and their ability to incorporate unique design elements that truly make my home one of a kind. I highly recommend Archies for anyone who is looking for a top-notch architecture and design firm.",
     name: "Dereck Lawson",
+    image: "client1.jpg",
   },
   {
     id: 2,
     text: "I hired LiveSpace to handle the plumbing and electrical work in my home renovation, and I must say they exceeded all my expectations. From the outset, the team displayed a high level of professionalism and expertise in their field. They carefully assessed the existing systems and proposed efficient and cost-effective solutions to address my needs. Not only did they complete the project on time, but they also maintained excellent communication and kept me informed at every step. Their friendly and approachable attitude made the entire experience smooth and stress-free.",
     name: "Mark Lewis",
+    image: "client2.jpg",
   },
   {
     id: 3,
     text: "When it came to enhancing the security of my property, I turned to LiveSpace for their expertise in security and camera installation. They proved to be an exceptional choice from start to finish. Their knowledgeable team conducted a thorough assessment of my property's security needs and designed a tailored plan to address potential vulnerabilities. Throughout the installation process, LiveSpace exhibited a high level of professionalism and attention to detail. They meticulously installed state-of-the-art security cameras and systems, providing me with peace of mind and confidence in the safety of my home.",
     name: "Michael Thompson",
+    image: "client3.jpg",
   },
   // Add more reviews here
 ];
@@ -37,7 +40,7 @@ const Clients = () => {
   };
 
   useEffect(() => {
-    Aos.init({ duration: 1000 })
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (
@@ -56,13 +59,23 @@ const Clients = () => {
             fill="#E8E3DF"
           />
         </svg>
-        <p className="client-main-text" data-aos="zoom-in">What Our Clients Say</p>
+        <p className="client-main-text" data-aos="zoom-in">
+          What Our Clients Say
+        </p>
       </div>
-      <p className="toes" data-aos="zoom-in">Testimonials on our exceptional service</p>
+      <p className="toes" data-aos="zoom-in">
+        Testimonials on our exceptional service
+      </p>
       <div className="horizontal-ruler"></div>
       <div className="customer-review-carousel">
         <div className="client-text-box">
-          <div className="client-text-box-photo" data-aos="zoom-in"></div>
+          <div className="client-text-box-photo" data-aos="zoom-in">
+            <img
+              src={`../assets/${reviews[activeReview].image}`}
+              width="100%"
+              height="100%"
+            />
+          </div>
           <div className="client-text-box-content" data-aos="zoom-in">
             <p className="client-text-subheading">
               {reviews[activeReview].text}
@@ -71,8 +84,12 @@ const Clients = () => {
           </div>
         </div>
         <div className="carousel-navigation" data-aos="zoom-in">
-          <button className="prev-bt" onClick={handlePrev}>Previous</button>
-          <button className="next-bt" onClick={handleNext}>Next</button>
+          <button className="prev-bt" onClick={handlePrev}>
+            Previous
+          </button>
+          <button className="next-bt" onClick={handleNext}>
+            Next
+          </button>
         </div>
       </div>
       <div className="horizontal-ruler"></div>
