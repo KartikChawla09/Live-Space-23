@@ -62,8 +62,8 @@ const Clients = () => {
           </div>
         </div>
         <div className="carousel-navigation">
-          <button onClick={handlePrev}>Previous</button>
-          <button onClick={handleNext}>Next</button>
+          <button className="prev-bt" onClick={handlePrev}>Previous</button>
+          <button className="next-bt" onClick={handleNext}>Next</button>
         </div>
       </div>
       <div className="horizontal-ruler"></div>

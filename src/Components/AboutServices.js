@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./AboutServices.css"
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { duration } from '@mui/material'
 
 const AboutServices = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  }, []);
   return (
     <div className='about-sevices-box'>
       <div className='About-services'>
         <div className='About-services-content'>
-          <h2 className='About-services-heading'>Transforming Spaces Transforming Lives</h2>
-          <div className='About-services-box'>
+          <h2 className='About-services-heading' data-aos="fade-left">Transforming Spaces Transforming Lives</h2>
+          <div className='About-services-box' data-aos="fade-right">
             <div className='About-services-line'></div>
             <div className='About-services-box-content'>
               {/* image */}
@@ -16,7 +22,7 @@ const AboutServices = () => {
               <p className='About-services-content'>Faucet change - Fixing leaks,Toilet Repairs and Replacement, Bidet installs - Dishwasher installs, - Upgrading old copper pipes to pex, - New shut-off valves, etc</p>
             </div>
           </div>
-          <div className='About-services-box'>
+          <div className='About-services-box' data-aos="fade-left">
             <div className='About-services-line'></div>
             <div className='About-services-box-content'>
               {/* image */}
@@ -25,7 +31,7 @@ const AboutServices = () => {
               <p className='About-services-content'>Light fictures - Power outlets - Switches, Decoration lights - TV Wall Mounting(hiiden wires)</p>
             </div>
           </div>
-          <div className='About-services-box'>
+          <div className='About-services-box' data-aos="fade-right">
             <div className='About-services-line'></div>
             <div className='About-services-box-content'>
               {/* image */}
@@ -34,7 +40,7 @@ const AboutServices = () => {
               <p className='About-services-content'>Tiling - WaterProofing, - New vanities, New mirrors - New accessories - Shower doors, Upgrading bath tubs to walk-in-showers</p>
             </div>
           </div>
-          <div className='About-services-box'>
+          <div className='About-services-box' data-aos="fade-left">
             <div className='About-services-line'></div>
             <div className='About-services-box-content'>
               {/* image */}
@@ -45,7 +51,7 @@ const AboutServices = () => {
                 Lock Changes - Door repairs and New Installs, Tenant Move in and out repairs, Cabinet Repairs, Appliance Installs, Junk Removal, Laminate and Tiles Ike Fixtures/Furniture Gazebo and Shed Installs, Kitchen and Washroom Caulking,Re-Grouting,Baseboards</p>
             </div>
           </div>
-          <div className='About-services-box'>
+          <div className='About-services-box' data-aos="fade-right">
             <div className='About-services-line'></div>
             <div className='About-services-box-content'>
               {/* image */}
@@ -55,33 +61,33 @@ const AboutServices = () => {
                 security and protection system, any of various means or devices to guard persons and property against a broad range of hazards, including crime, fire, accidents, espionage, sabotage, subversion, and attack.</p>
             </div>
           </div>
-          <div className='About-services-box'>
+          <div className='About-services-box' data-aos="fade-left">
             <div className='About-services-line'></div>
             <div className='About-services-box-content'>
               {/* image */}
               <div className='About-services-image'></div>
               <h5 className='About-services-title'>kitchen renovation</h5>
-              <p className='About-services-content'>
+              <p className='About-services-content'>A kitchen is the heart of any home, and we understand the significance of creating a space that is not only functional but also visually appealing. Our kitchen renovation services are tailored to your specific requirements, whether it's a modern, sleek design or a cozy, traditional feel.
               </p>
             </div>
           </div>
-          <div className='About-services-box'>
+          <div className='About-services-box' data-aos="fade-right">
             <div className='About-services-line'></div>
             <div className='About-services-box-content'>
               {/* image */}
               <div className='About-services-image'></div>
               <h5 className='About-services-title'>bathroom renovation</h5>
-              <p className='About-services-content'>
+              <p className='About-services-content'>Whether it's a small powder room or a luxurious master bathroom, the renovation aims to create a functional, aesthetically pleasing, and relaxing environment. Bathroom renovations can vary in scope, from minor updates to complete overhauls, depending on the homeowner's needs and budget.
               </p>
             </div>
           </div>
-          <div className='About-services-box'>
+          <div className='About-services-box' data-aos="fade-left">
             <div className='About-services-line'></div>
             <div className='About-services-box-content'>
               {/* image */}
               <div className='About-services-image'></div>
               <h5 className='About-services-title'>full remodels</h5>
-              <p className='About-services-content'>
+              <p className='About-services-content'>At our construction company, we offer comprehensive full remodel services that encompass every aspect of your home. Whether you want to transform a single room or give your entire property a fresh new look, we have the expertise and resources to handle it all. From concept to completion, we work closely with our clients to understand their vision and preferences, ensuring that the final result aligns perfectly with their needs.
               </p>
             </div>
           </div>

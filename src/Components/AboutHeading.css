@@ -65,6 +65,9 @@
     border-radius: 20px;
 }
 
+
+
+
 @media screen and (max-width: 955px) {
 
     .About-header-text {
@@ -92,4 +95,5 @@
     .About-slash {
         display: none;
     }
+
 }
