@@ -7,7 +7,7 @@ import { duration } from '@mui/material'
 
 const AboutHeading = () => {
     useEffect(() => {
-        Aos.init({ duration: 2000 })
+        Aos.init({ duration: 1500 })
     }, []);
     return (
         <div className='about-outer-box' data-aos="zoom-in">
