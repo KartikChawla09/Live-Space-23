@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from 'react'
 import { useState } from "react";
 import "./Clients.css";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { duration } from '@mui/material'
+
 const reviews = [
   {
     id: 1,
@@ -31,6 +35,11 @@ const Clients = () => {
       prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
     );
   };
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  }, []);
+
   return (
     <div className="client-main-page">
       <div className="horizontal-ruler"></div>
@@ -47,21 +56,21 @@ const Clients = () => {
             fill="#E8E3DF"
           />
         </svg>
-        <p className="client-main-text">What Our Clients Say</p>
+        <p className="client-main-text" data-aos="zoom-in">What Our Clients Say</p>
       </div>
-      <p className="toes">Testimonials on our exceptional service</p>
+      <p className="toes" data-aos="zoom-in">Testimonials on our exceptional service</p>
       <div className="horizontal-ruler"></div>
       <div className="customer-review-carousel">
         <div className="client-text-box">
-          <div className="client-text-box-photo"></div>
-          <div className="client-text-box-content">
+          <div className="client-text-box-photo" data-aos="zoom-in"></div>
+          <div className="client-text-box-content" data-aos="zoom-in">
             <p className="client-text-subheading">
               {reviews[activeReview].text}
             </p>
             <p className="client-text-name">{reviews[activeReview].name}</p>
           </div>
         </div>
-        <div className="carousel-navigation">
+        <div className="carousel-navigation" data-aos="zoom-in">
           <button className="prev-bt" onClick={handlePrev}>Previous</button>
           <button className="next-bt" onClick={handleNext}>Next</button>
         </div>

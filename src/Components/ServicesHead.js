@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./ServicesHead.css"
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { duration } from '@mui/material'
 
 const ServicesHead = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1500 })
+    }, []);
     return (
         <div className='services-main-box'>
-            <div className='services-box-elements'>
+            <div className='services-box-elements' data-aos="zoom-in">
                 <div className='service-image-placeholder'>
                     <div className='service-image1'></div>
                     <div className='service-image2'></div>

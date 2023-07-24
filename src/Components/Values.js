@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from 'react'
 import "./Values.css";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { duration } from '@mui/material'
 
 const Values = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  }, []);
   return (
     <div className="value-box">
-      <div className="value-box-text-image">
-        <div className="value-text-image-arrow">
+      <div className="value-box-text-image" data-aos="zoom-in">
+        <div className="value-text-image-arrow" >
           <h1 className="value-text">Our Values</h1>
           <svg
             className="down-arrow-value"
@@ -24,7 +30,7 @@ const Values = () => {
         <div className="value-image-box"></div>
       </div>
       <div className="value-svgs">
-        <div className="value-holder">
+        <div className="value-holder" data-aos="zoom-in">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -46,7 +52,7 @@ const Values = () => {
           </svg>
           <p>Design for Sustainability</p>
         </div>
-        <div className="value-holder down-svg">
+        <div className="value-holder down-svg" data-aos="zoom-in">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -68,7 +74,7 @@ const Values = () => {
           </svg>
           <p>Honesty and integrity</p>
         </div>
-        <div className="value-holder">
+        <div className="value-holder" data-aos="zoom-in">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -90,7 +96,7 @@ const Values = () => {
           </svg>
           <p>Affordable Price</p>
         </div>
-        <div className="value-holder  down-svg">
+        <div className="value-holder  down-svg" data-aos="zoom-in">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -112,7 +118,7 @@ const Values = () => {
           </svg>
           <p>Attention to Detail</p>
         </div>
-        <div className="value-holder">
+        <div className="value-holder" data-aos="zoom-in">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -134,7 +140,7 @@ const Values = () => {
           </svg>
           <p>Timeless Design</p>
         </div>
-        <div className="value-holder down-svg">
+        <div className="value-holder down-svg" data-aos="zoom-in">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
