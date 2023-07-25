@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
-import CompanyLogo from "../assets/company.png";
+import house from "../assets/houseLogo.png"
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <div className="box" ref={menuRef}>
       <div className="navbar-logo">
-        <img src={CompanyLogo} alt="logo" />
+        <img src={house} alt="logo" />
       </div>
       <div className={`navbar-headings ${menuOpen ? "visible" : ""}`}>
         <p className="navbar-tem" onClick={handleParagraphClick}>

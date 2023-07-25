@@ -129,6 +129,7 @@ button:focus {
     opacity: 0.3;
     transform: translateY(-20%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0%);
@@ -139,6 +140,7 @@ button:focus {
   .questionwrapper {
     width: 80%;
   }
+
   .searchbar {
     width: 100%;
   }

@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-around;
 }
+
 .stats-main-text {
   color: var(--black, #202020);
   font-family: Hanken Grotesk;
@@ -13,6 +14,7 @@
   margin-top: 5rem;
   margin-bottom: 0;
 }
+
 .stats-secondary-text {
   color: var(--grey, #636363);
   font-family: Inter;
@@ -22,6 +24,7 @@
   line-height: 1.625rem;
   margin-left: 1.3rem;
 }
+
 .stats-main-section {
   margin-top: 10rem;
   margin-bottom: 10rem;
@@ -32,6 +35,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .remover-og {
     display: none;
   }

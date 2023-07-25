@@ -90,7 +90,7 @@ const AboutServices = () => {
               </p>
             </div>
           </div>
-          <div className='About-services-box' data-aos="fade-left">
+          <div className='About-services-box' data-aos="fade-right">
             <div className='About-services-line'></div>
             <div className='About-services-box-content'>
               {/* image */}

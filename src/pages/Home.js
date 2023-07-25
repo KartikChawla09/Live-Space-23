@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
+
 import "./Home.css";
 import Hero from "../Components/Hero";
 import FAQ from "./FAQ";
@@ -11,7 +11,6 @@ import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <Hero />
       <FAQ />
       <Values />
