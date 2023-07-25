@@ -294,8 +294,12 @@ iframe {
     margin-right: 5rem;
   }
 
+  .contact-box-main {
+    overflow-x: hidden;
+  }
+
   .second-container form button {
-    width: 15rem;
+    width: 13rem;
     height: 50px;
     background: #333;
     color: var(--white);

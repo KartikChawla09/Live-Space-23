@@ -1,6 +1,6 @@
+
 import React from "react";
 import "./About.css";
-import Navbar from "../Components/Navbar";
 import AboutHeading from "../Components/AboutHeading";
 import AboutServices from "../Components/AboutServices";
 import WhyChooseUs from "../Components/WhyChooseUs";

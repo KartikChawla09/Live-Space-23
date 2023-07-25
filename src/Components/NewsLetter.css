@@ -1,7 +1,7 @@
 .news-content-box {
   display: flex;
   width: 88%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   margin-top: -2rem;
   margin-left: auto;
   margin-right: auto;
@@ -11,9 +11,11 @@
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   transition: ease-in-out transform 0.5s;
 }
+
 .insta-box-nl {
   text-decoration: none;
 }
+
 .news-content-box:hover {
   transform: scale(1.02);
 }
