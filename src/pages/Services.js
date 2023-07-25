@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Services.css"
-import Navbar from '../Components/Navbar'
+
 import ServicesHead from '../Components/ServicesHead'
 import ServicesProcess from '../Components/ServicesProcess'
 import AboutServices from '../Components/AboutServices'
@@ -12,7 +12,6 @@ const Services = () => {
     return (
         <div>
             <GoToTop></GoToTop>
-            <Navbar></Navbar>
             <ServicesHead></ServicesHead>
             <ServicesProcess></ServicesProcess>
             <AboutServices></AboutServices>

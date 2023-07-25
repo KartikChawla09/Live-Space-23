@@ -3,6 +3,7 @@ import "./ServicesHead.css"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { duration } from '@mui/material'
+import Navbar from '../Components/Navbar'
 import img2 from "../assets/service2.png"
 import img1 from "../assets/service1.png"
 
@@ -12,6 +13,7 @@ const ServicesHead = () => {
     }, []);
     return (
         <div className='services-main-box'>
+            <Navbar></Navbar>
             <div className='services-box-elements' data-aos="zoom-in">
                 <div className='service-image-placeholder'>
                     <div className='service-image1 kenburns-top'>
