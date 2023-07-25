@@ -23,8 +23,8 @@ const AboutHeading = () => {
                     <img src={visionImage} alt="our Vision"></img>
                 </div>
             </div>
-        </div>
-    )
-}
+    </div>
+  );
+};
 
-export default AboutHeading
+export default AboutHeading;

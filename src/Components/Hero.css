@@ -2,8 +2,8 @@
 
 .hero-bg {
   background-image: url("../assets/gradient.jpg");
+  border-radius: 0 0 20% 20%;
 }
-
 /* Mobile or Tablet View */
 @media screen and (max-width: 900px) {
   .heading {
@@ -83,6 +83,7 @@
   .hero-bg {
     background-color: #d9d9d9;
     height: auto;
+    border-radius: 0 0 15% 15%;
   }
 }
 

@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 import "./Hero.css";
 import arrow from "../assets/StartProject.svg";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-import { duration } from '@mui/material'
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { duration } from "@mui/material";
 import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 
 const Hero = () => {
   useEffect(() => {
-    Aos.init({ duration: 1500 })
+    Aos.init({ duration: 1500 });
   }, []);
   return (
     <div className="hero-bg">
@@ -22,12 +22,20 @@ const Hero = () => {
           <div className="sub-text-holder1">
             <p className="sub-heading-1">
               Welcome to Live Space, a full-service architecture and interior
-              design firm. We specialize in creating beautiful, functional spaces
-              that reflect your unique style and personality. Let us help you
-              transform your space into a work of art.
+              design firm. We specialize in creating beautiful, functional
+              spaces that reflect your unique style and personality. Let us help
+              you transform your space into a work of art.
             </p>
-            <Link className='btn-link' to="/contact"><button className="project-button">Start a Project<img className="arrow-project" src={arrow} alt="arrow-proj"></img>
-            </button></Link>
+            <Link className="btn-link" to="/contact">
+              <button className="project-button">
+                Start a Project
+                <img
+                  className="arrow-project"
+                  src={arrow}
+                  alt="arrow-proj"
+                ></img>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="down-arrow">
