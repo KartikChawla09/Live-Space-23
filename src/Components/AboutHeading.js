@@ -5,12 +5,14 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { duration } from '@mui/material'
 import visionImage from "../assets/aboutusVaision.png"
+import Navbar from '../Components/Navbar'
 const AboutHeading = () => {
     useEffect(() => {
         Aos.init({ duration: 1500 })
     }, []);
     return (
         <div className='about-outer-box' data-aos="zoom-in">
+            <Navbar></Navbar>
             <div className='About-header-content'>
                 <p className='About-text'>Our Story</p>
                 <div className='About-header-text'>

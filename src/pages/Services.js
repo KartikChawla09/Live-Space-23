@@ -10,7 +10,7 @@ import GoToTop from './goToTop'
 
 const Services = () => {
     return (
-        <div>
+        <div className='container-services'>
             <GoToTop></GoToTop>
             <ServicesHead></ServicesHead>
             <ServicesProcess></ServicesProcess>

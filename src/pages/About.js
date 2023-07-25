@@ -1,6 +1,5 @@
 import React from 'react'
 import "./About.css"
-import Navbar from '../Components/Navbar'
 import AboutHeading from '../Components/AboutHeading'
 import AboutServices from '../Components/AboutServices'
 import WhyChooseUs from '../Components/WhyChooseUs'
@@ -12,9 +11,8 @@ import GoToTop from './goToTop'
 
 const About = () => {
     return (
-        <div>
+        <div className='container-about'>
             <GoToTop></GoToTop>
-            <Navbar></Navbar>
             <AboutHeading></AboutHeading>
             <AboutOurTeam></AboutOurTeam>
             <WhyChooseUs></WhyChooseUs>
