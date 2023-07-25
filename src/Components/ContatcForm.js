@@ -34,9 +34,11 @@ const ContatcForm = () => {
       )
       .then((response) => {
         console.log("Email sent successfully!", response);
+        alert("Thanks for contacting us. We will get back to you shortly");
       })
       .catch((error) => {
         console.error("Error sending email:", error);
+        alert("Error sending email. Please try again.");
       });
 
     // Clear the form after submission
