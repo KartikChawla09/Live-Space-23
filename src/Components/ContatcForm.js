@@ -90,7 +90,7 @@ const ContatcForm = () => {
               </label>
               <textarea
                 id="message-textarea"
-                // placeholder="Write us a message"
+              // placeholder="Write us a message"
               ></textarea>
             </div>
             <div className="submit-box-contact">
