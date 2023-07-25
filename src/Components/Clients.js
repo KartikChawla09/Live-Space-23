@@ -29,17 +29,27 @@ const reviews = [
   },
   // Add more reviews here
 ];
+
 const Clients = () => {
+
   const [activeReview, setActiveReview] = useState(0);
+  const [isActive, setIsActive] = useState(false);
+
 
   const handleNext = () => {
-    setActiveReview((prevIndex) => (prevIndex + 1) % reviews.length);
+    setActiveReview((prevIndex) => (prevIndex + 1) % reviews.length)
+    setIsActive(current => !current);
+
+    const timer = setTimeout(() => setIsActive(current => !current), 900);
   };
 
   const handlePrev = () => {
     setActiveReview((prevIndex) =>
       prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
     );
+    setIsActive(current => !current);
+
+    const timer = setTimeout(() => setIsActive(current => !current), 900);
   };
 
   useEffect(() => {
@@ -71,9 +81,9 @@ const Clients = () => {
       </p>
       <div className="horizontal-ruler"></div>
       <div className="customer-review-carousel">
-        <div className="client-text-box">
+        <div className={isActive ? 'slide-out-right client-text-box' : 'client-text-box'}>
           <div className="client-text-box-photo" data-aos="zoom-in">
-            <img src={reviews[activeReview].image} width="100%" height="100%" />
+            <img src={reviews[activeReview].image} alt="people" width="100%" height="100%" />
           </div>
           <div className="client-text-box-content" data-aos="zoom-in">
             <p className="client-text-subheading">

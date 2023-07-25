@@ -11,7 +11,7 @@ import GoToTop from "./goToTop";
 
 const About = () => {
   return (
-    <div>
+    <div className="container-about">
       <GoToTop></GoToTop>
       <AboutHeading></AboutHeading>
       <AboutOurTeam></AboutOurTeam>
