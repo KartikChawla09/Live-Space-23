@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./ContactForm.css";
-import image from "../assets/contact.jpg"
+import image from "../assets/contact.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { duration } from "@mui/material";
@@ -18,7 +18,9 @@ const ContatcForm = () => {
           <h2>Send Us A Message</h2>
           <form>
             <div className="form-group">
-              <label data-aos="zoom-in" htmlFor="name-input">Tell us your name*</label>
+              <label data-aos="zoom-in" htmlFor="name-input">
+                Tell us your name*
+              </label>
               <input
                 id="name-input"
                 type="text"
@@ -27,7 +29,9 @@ const ContatcForm = () => {
               />
             </div>
             <div className="form-group">
-              <label data-aos="zoom-in" htmlFor="email-input">Enter your email*</label>
+              <label data-aos="zoom-in" htmlFor="email-input">
+                Enter your email*
+              </label>
               <input
                 id="email-input"
                 type="text"
@@ -36,7 +40,9 @@ const ContatcForm = () => {
               />
             </div>
             <div className="form-group">
-              <label data-aos="zoom-in" htmlFor="phone-input">Enter phone number*</label>
+              <label data-aos="zoom-in" htmlFor="phone-input">
+                Enter phone number*
+              </label>
               <input
                 id="phone-input"
                 type="text"
@@ -45,10 +51,12 @@ const ContatcForm = () => {
               />
             </div>
             <div className="form-group">
-              <label data-aos="zoom-in" htmlFor="message-textarea">Message</label>
+              <label data-aos="zoom-in" htmlFor="message-textarea">
+                Message
+              </label>
               <textarea
                 id="message-textarea"
-              // placeholder="Write us a message"
+                // placeholder="Write us a message"
               ></textarea>
             </div>
             <div className="submit-box-contact">
@@ -68,7 +76,9 @@ const ContatcForm = () => {
         ></iframe>
         <div className="info-container">
           <div>
-            <h4 className="contact-us-contact-info" data-aos="zoom-in">Contact Info</h4>
+            <h4 className="contact-us-contact-info" data-aos="zoom-in">
+              Contact Info
+            </h4>
             <h3 data-aos="zoom-in">Address</h3>
             <p data-aos="zoom-in">Lower Mainland, British Columbia</p>
           </div>

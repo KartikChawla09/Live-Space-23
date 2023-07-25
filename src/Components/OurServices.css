@@ -1,7 +1,12 @@
 .our-services-section {
   margin-bottom: 10rem;
+  background-image: url("../assets/4907157.jpg");
+  padding-top: 3rem;
+  margin-bottom: 3rem;
 }
-
+.who-who {
+  padding-bottom: 5rem;
+}
 .horizontal-ruler-2 {
   margin-top: 5rem;
   margin-bottom: 5rem;

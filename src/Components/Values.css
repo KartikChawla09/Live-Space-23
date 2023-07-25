@@ -1,6 +1,7 @@
 .value-box {
   background: var(--beige, #e8e3df);
   padding-bottom: 10vh;
+  border-radius: 10% 0 0 0;
 }
 
 .value-box-text-image {

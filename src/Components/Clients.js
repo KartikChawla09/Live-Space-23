@@ -4,10 +4,9 @@ import "./Clients.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { duration } from "@mui/material";
-import client3 from "../assets/client1.jpg"
-import client2 from "../assets/client2.jpg"
-import client1 from "../assets/client3.jpg"
-
+import client3 from "../assets/client1.jpg";
+import client2 from "../assets/client2.jpg";
+import client1 from "../assets/client3.jpg";
 
 const reviews = [
   {
@@ -49,7 +48,7 @@ const Clients = () => {
 
   return (
     <div className="client-main-page" id="testimonials">
-      <div className="horizontal-ruler"></div>
+      {/* <div className="horizontal-ruler"></div> */}
       <div className="client-main-text-arrow">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -74,11 +73,7 @@ const Clients = () => {
       <div className="customer-review-carousel">
         <div className="client-text-box">
           <div className="client-text-box-photo" data-aos="zoom-in">
-            <img
-              src={reviews[activeReview].image}
-              width="100%"
-              height="100%"
-            />
+            <img src={reviews[activeReview].image} width="100%" height="100%" />
           </div>
           <div className="client-text-box-content" data-aos="zoom-in">
             <p className="client-text-subheading">
