@@ -136,7 +136,7 @@
   font-size: 2rem;
   width: 13rem;
   height: 3rem;
-  border: solid 1px #202020;
+  border: solid 1.5px #202020;
   border-radius: 20px;
 }
 
@@ -144,9 +144,29 @@
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
+
 }
 
-.prev-bt {}
+.next-bt {
+  transition: ease-in-out transform .5s;
+}
+
+.next-bt:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: grey;
+}
+
+.prev-bt {
+  transition: ease-in-out transform .5s;
+}
+
+.prev-bt:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: grey;
+}
+
 
 @media screen and (max-width: 900px) {
   .client-text-box-photo {

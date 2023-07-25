@@ -83,7 +83,7 @@ const Clients = () => {
       <div className="customer-review-carousel">
         <div className={isActive ? 'slide-out-right client-text-box' : 'client-text-box'}>
           <div className="client-text-box-photo" data-aos="zoom-in">
-            <img src={reviews[activeReview].image} width="100%" height="100%" />
+            <img src={reviews[activeReview].image} alt="people" width="100%" height="100%" />
           </div>
           <div className="client-text-box-content" data-aos="zoom-in">
             <p className="client-text-subheading">
