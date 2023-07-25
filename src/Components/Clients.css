@@ -153,8 +153,6 @@
 
 .next-bt:hover {
   transform: scale(1.1);
-  color: white;
-  background-color: grey;
 }
 
 .prev-bt {
@@ -163,8 +161,6 @@
 
 .prev-bt:hover {
   transform: scale(1.1);
-  color: white;
-  background-color: grey;
 }
 
 
