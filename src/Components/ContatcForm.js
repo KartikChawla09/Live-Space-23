@@ -4,7 +4,44 @@ import image from "../assets/contact.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { duration } from "@mui/material";
+import emailjs from "emailjs-com";
+import emailjsConfig from "./emailjsConfig";
 const ContatcForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Get form values
+    const name = e.target.elements["name-input"].value;
+    const email = e.target.elements["email-input"].value;
+    const phone = e.target.elements["phone-input"].value;
+    const message = e.target.elements["message-textarea"].value;
+
+    // Prepare email parameters
+    const params = {
+      from_name: name,
+      from_email: email,
+      phone: phone,
+      message: message,
+    };
+
+    // Send email using EmailJS
+    emailjs
+      .send(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        params,
+        emailjsConfig.userId
+      )
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+
+    // Clear the form after submission
+    e.target.reset();
+  };
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -16,17 +53,12 @@ const ContatcForm = () => {
         </div>
         <div className="second-container">
           <h2>Send Us A Message</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label data-aos="zoom-in" htmlFor="name-input">
                 Tell us your name*
               </label>
-              <input
-                id="name-input"
-                type="text"
-                // placeholder="Your name"
-                required
-              />
+              <input id="name-input" type="text" required />
             </div>
             <div className="form-group">
               <label data-aos="zoom-in" htmlFor="email-input">
@@ -60,7 +92,9 @@ const ContatcForm = () => {
               ></textarea>
             </div>
             <div className="submit-box-contact">
-              <button data-aos="zoom-in">Submit</button>
+              <button data-aos="zoom-in" type="submit">
+                Submit
+              </button>
             </div>
           </form>
         </div>
