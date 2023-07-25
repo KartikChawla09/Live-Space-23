@@ -35,8 +35,33 @@
 .menu-icon {
   display: none;
 }
-
+.navbar-logo {
+  display: flex;
+}
+.ls-text-first {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.ls-text-second {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  display: none;
+}
 @media only screen and (max-width: 900px) {
+  .ls-text-first {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    display: none;
+  }
+  .ls-text-second {
+    margin-left: 1rem;
+    font-size: 2rem;
+    margin-top: 0.2rem;
+    display: block;
+  }
   .slash {
     display: none;
   }

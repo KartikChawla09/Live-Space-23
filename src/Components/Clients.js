@@ -40,7 +40,7 @@ const Clients = () => {
     setActiveReview((prevIndex) => (prevIndex + 1) % reviews.length)
     setIsActive(current => !current);
 
-    const timer = setTimeout(() => setIsActive(current => !current), 1000);
+    const timer = setTimeout(() => setIsActive(current => !current), 900);
   };
 
   const handlePrev = () => {
@@ -49,7 +49,7 @@ const Clients = () => {
     );
     setIsActive(current => !current);
 
-    const timer = setTimeout(() => setIsActive(current => !current), 1000);
+    const timer = setTimeout(() => setIsActive(current => !current), 900);
   };
 
   useEffect(() => {
